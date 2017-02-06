@@ -6,24 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | ideal-republic Blog</title>
+  <title>关于闭包的一些总结 | ideal-republic Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="之前有听说过Hexo这个博客框架，但一直没时间给自己搭一个，其实平时也有注意到很多大牛的博客是很绚丽的，却不知道那就是Hexo。说干就干，历时一整天，踩坑无数，终于变成了博主想要的样子。
-
-博主系统macOS,搭建博客主题Yilia。下面记录博主搭建的整个过程。">
+  <meta name="description" content="其实关于闭包各个论坛社区里都有很多的文章来讲它，毕竟闭包是JavaScript中一个特色，也正因为这个雨中不同的特色也让闭包理解起来有一些吃力。笔者在这里不仅仅是想介绍闭包，也向列举一些笔者所见过的一些闭包，如果有读者还有一些比较经典的闭包例子，希望可以在评论区里留一下，谢谢。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/10/10/从零搭建基于github和hexo的个人博客/index.html">
+<meta property="og:title" content="关于闭包的一些总结">
+<meta property="og:url" content="http://yoursite.com/2016/11/01/关于闭包/index.html">
 <meta property="og:site_name" content="ideal-republic Blog">
-<meta property="og:description" content="之前有听说过Hexo这个博客框架，但一直没时间给自己搭一个，其实平时也有注意到很多大牛的博客是很绚丽的，却不知道那就是Hexo。说干就干，历时一整天，踩坑无数，终于变成了博主想要的样子。
-
-博主系统macOS,搭建博客主题Yilia。下面记录博主搭建的整个过程。">
-<meta property="og:updated_time" content="2017-02-06T04:52:39.000Z">
+<meta property="og:description" content="其实关于闭包各个论坛社区里都有很多的文章来讲它，毕竟闭包是JavaScript中一个特色，也正因为这个雨中不同的特色也让闭包理解起来有一些吃力。笔者在这里不仅仅是想介绍闭包，也向列举一些笔者所见过的一些闭包，如果有读者还有一些比较经典的闭包例子，希望可以在评论区里留一下，谢谢。">
+<meta property="og:updated_time" content="2017-02-06T05:50:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="之前有听说过Hexo这个博客框架，但一直没时间给自己搭一个，其实平时也有注意到很多大牛的博客是很绚丽的，却不知道那就是Hexo。说干就干，历时一整天，踩坑无数，终于变成了博主想要的样子。
-
-博主系统macOS,搭建博客主题Yilia。下面记录博主搭建的整个过程。">
+<meta name="twitter:title" content="关于闭包的一些总结">
+<meta name="twitter:description" content="其实关于闭包各个论坛社区里都有很多的文章来讲它，毕竟闭包是JavaScript中一个特色，也正因为这个雨中不同的特色也让闭包理解起来有一些吃力。笔者在这里不仅仅是想介绍闭包，也向列举一些笔者所见过的一些闭包，如果有读者还有一些比较经典的闭包例子，希望可以在评论区里留一下，谢谢。">
   
     <link rel="alternative" href="/atom.xml" title="ideal-republic Blog" type="application/atom+xml">
   
@@ -159,136 +153,82 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-从零搭建基于github和hexo的个人博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-关于闭包" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      关于闭包的一些总结
     </h1>
   
 
         
-        <a href="/2016/10/10/从零搭建基于github和hexo的个人博客/" class="archive-article-date">
-  	<time datetime="2016-10-10T10:22:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-10</time>
+        <a href="/2016/11/01/关于闭包/" class="archive-article-date">
+  	<time datetime="2016-11-01T14:25:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>之前有听说过Hexo这个博客框架，但一直没时间给自己搭一个，其实平时也有注意到很多大牛的博客是很绚丽的，却不知道那就是Hexo。说干就干，历时一整天，踩坑无数，终于变成了博主想要的样子。</strong></p>
-<ul>
-<li>博主系统macOS,搭建博客主题Yilia。下面记录博主搭建的整个过程。</li>
-</ul>
+        <p>其实关于闭包各个论坛社区里都有很多的文章来讲它，毕竟闭包是JavaScript中一个特色，也正因为这个雨中不同的特色也让闭包理解起来有一些吃力。笔者在这里不仅仅是想介绍闭包，也向列举一些笔者所见过的一些闭包，如果有读者还有一些比较经典的闭包例子，希望可以在评论区里留一下，谢谢。</p>
 <a id="more"></a>
-<h2 id="git和github"><a href="#git和github" class="headerlink" title="git和github"></a>git和github</h2><blockquote>
+<p><strong>说了半天，究竟什么是闭包呢？</strong></p>
 <ul>
-<li>想搭建一个博客的应该大多数都是程序员吧，那么github账号应该是一定有的了。你要是实在清新脱俗到连个github账号也没有，不用担心，给你个外链<a href="https://github.com/" target="_blank" rel="external">Github</a>,账号设置然后添加SSH,这样你之后输入hexo命令的时候就不用一次次输入密码了，关于如何注册github和添加SSH，这里需要提醒一点，github账号最好都是小写字母，不然容易解析错误，还有邮箱，尽量别用国内的邮箱，很容易出问题了，比如你git提交的贡献不被记录。</li>
-<li>Git身为程序员给他应该是会用的吧。好吧假设你不会使用git和github给你个外链<a href="http://www.cnblogs.com/peterzd/archive/2012/04/22/2465230.html" target="_blank" rel="external">看这里</a></li>
+<li>闭包就是函数的局部变量集合，只是这些局部变量在函数返回后会继续存在。</li>
+<li>闭包就是就是函数的“堆栈”在函数返回后并不释放，我们也可以理解为这些函数堆栈并不在栈上分配而是在堆上分配。</li>
+<li>当在一个函数内定义另外一个函数就会产生闭包。</li>
 </ul>
-</blockquote>
-<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><ul>
-<li><p>好的，现在你有了github和git了，也配置好了，那么就需要在github新建一个仓库了,</p>
-<p><strong>注意：这里的仓库名称要和你的username对应</strong></p>
-</li>
-<li><p>Node安装</p>
-</li>
-</ul>
-<blockquote>
-<p>Node可以去官网下载，或是在国内下载，由于众所周知的原因，这里放一个<a href="http://nodejs.cn/" target="_blank" rel="external">nodejs.cn</a>的链接<br>Node内置npm包，我们之后就可以打开node命令行使用npm进行安装一些依赖，如果觉得太慢，可以使用淘宝镜像cnpm</p>
-</blockquote>
+<p><strong>为了便于理解，我们可以简单的将闭包理解为：</strong></p>
 <ul>
-<li>Hexo安装</li>
+<li>闭包：是指有权访问另外一个函数作用域中的变量的函数。</li>
 </ul>
+<h3 id="JavaScript中的作用域"><a href="#JavaScript中的作用域" class="headerlink" title="JavaScript中的作用域"></a>JavaScript中的作用域</h3><p>  <strong>JavaScript中是没有块级作用域的。不过关于块级作用域我们在这里不做深入探究，笔者在JavaScript的作用域和块级作用域概念理解中有对块级作用域较为详细的解释，不懂的读者可以去看看。</strong></p>
 <blockquote>
-<p>好的，现在我们Node,git,github都弄好了，现在可以本地化一个hexo了,新建hexo文件夹，任意盘下都可以，然后命令行执行命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; npm install hexo -g  #-g表示全局安装, npm默认为当前项目安装</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+<p>变量的作用域无非就是两种：全局变量和局部变量。</p>
+<p>Javascript语言的特殊之处，就在于函数内部可以直接读取全局变量。</p>
 </blockquote>
-<p>&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var n=999;</div><div class="line">function f1()&#123;</div><div class="line">    alert(n);</div><div class="line">&#125;</div><div class="line">f1(); // 999</div></pre></td></tr></table></figure>
+<p><strong>如上函数，f1可调用全局变量n</strong></p>
+<p>另一方面，在函数外部自然无法读取函数内的局部变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function f1()&#123;</div><div class="line">    var n=999;</div><div class="line">&#125;</div><div class="line">alert(n); // error</div></pre></td></tr></table></figure>
+<p><strong>这里有一个地方需要注意，函数内部声明变量的时候，一定要使用var命令。如果不用的话，你实际上声明了一个全局变量。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function f1()&#123;</div><div class="line">    n=999;</div><div class="line">&#125;</div><div class="line">f1();</div><div class="line">alert(n); // 999</div></pre></td></tr></table></figure>
+<p>###闭包</p>
+<p><strong>1.理解闭包</strong></p>
+<p><strong>我们已经理解了什么是作用域，什么是块级作用域，那又该如何去访问函数内部的变量呢？</strong></p>
+<p>出于种种原因，我们有时候需要得到函数内的局部变量。但是，前面已经说过了，正常情况下，这是办不到的，只有通过变通方法才能实现。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function f1()&#123;</div><div class="line">var n=999;</div><div class="line">function f2()&#123;</div><div class="line">    alert(n);</div><div class="line">&#125;</div><div class="line">    return f2;</div><div class="line">&#125;</div><div class="line">var result=f1();</div><div class="line">result();// 弹出999</div></pre></td></tr></table></figure>
+<p><strong>上面函数中的f2函数就是闭包，就是通过建立函数来访问函数内部的局部变量。</strong></p>
+<p><strong>2.闭包的用途</strong></p>
+<p>  闭包可以用在许多地方。它的最大用处有两个，一个是前面提到的可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">function f1()&#123;</div><div class="line">    var n=999;</div><div class="line">    nAdd=function()&#123;n+=1&#125;</div><div class="line">    function f2()&#123;</div><div class="line">    alert(n);</div><div class="line">    &#125;</div><div class="line">    return f2;</div><div class="line">&#125;</div><div class="line">var result=f1();</div><div class="line">result(); // 999</div><div class="line">nAdd();</div><div class="line">result(); // 1000</div></pre></td></tr></table></figure>
+<p><strong>在这段代码中，result实际上就是闭包f2函数。它一共运行了两次，第一次的值是999，第二次的值是1000。这证明了，函数f1中的局部变量n一直保存在内存中，并没有在f1调用后被自动清除。</strong></p>
+<p><strong>为什么会这样呢？原因就在于f1是f2的父函数，而f2被赋给了一个全局变量，这导致f2始终在内存中，而f2的存在依赖于f1，因此f1也始终在内存中，不会在调用结束后，被垃圾回收机制（garbage collection）回收。</strong></p>
+<p><strong>这段代码中另一个值得注意的地方，就是”nAdd=function(){n+=1}”这一行，首先在nAdd前面没有使用var关键字，因此nAdd是一个全局变量，而不是局部变量。其次，nAdd的值是一个匿名函数（anonymous function），而这个匿名函数本身也是一个闭包，所以nAdd相当于是一个setter，可以在函数外部对函数内部的局部变量进行操作。</strong></p>
+<p><strong>3.闭包的注意点</strong></p>
 <blockquote>
-<p>如果遇到错误：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt; &#123; [Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</div><div class="line">&gt; &#123; [Error: Cannot find module &apos;./build/default/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</div><div class="line">&gt; &#123; [Error: Cannot find module &apos;./build/Debug/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+<p>1）由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。</p>
+<p>2）闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值。</p>
 </blockquote>
-<p>&gt;</p>
+<p><strong>4.经典闭包小案例</strong></p>
+<p><strong>如果你能理解下面全部的案例，那你的闭包就算是真正掌握了。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var name = &quot;The Window&quot;;</div><div class="line">var object = &#123;</div><div class="line">name : &quot;My Object&quot;,</div><div class="line">getNameFunc : function()&#123;</div><div class="line">    return function()&#123;</div><div class="line">        return this.name;</div><div class="line">        &#125;;</div><div class="line">    &#125;</div><div class="line">&#125;;　　alert(object.getNameFunc()());//The Window</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var name = &quot;The Window&quot;;</div><div class="line">var object = &#123;</div><div class="line">name : &quot;My Object&quot;,</div><div class="line">getNameFunc : function()&#123;</div><div class="line">    var that = this;</div><div class="line">    return function()&#123;</div><div class="line">        return that.name;</div><div class="line">        &#125;;</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line">  alert(object.getNameFunc()());//My Object</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function fun(n,o) &#123;</div><div class="line">  console.log(o)</div><div class="line">  return &#123;</div><div class="line">    fun:function(m)&#123;</div><div class="line">      return fun(m,n);</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line">var a = fun(0);  a.fun(1);  a.fun(2);  a.fun(3);//undefined,?,?,?</div><div class="line">var b = fun(0).fun(1).fun(2).fun(3);//undefined,?,?,?</div><div class="line">var c = fun(0).fun(1);  c.fun(2);  c.fun(3);//undefined,?,?,?</div></pre></td></tr></table></figure>
 <blockquote>
-<p>改用下面的命令安装：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; npm install hexo --no-optional</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+<p>//问:三行a,b,c的输出分别是什么？</p>
 </blockquote>
-<p>&gt;</p>
+<p><strong>这是一道非常典型的JS闭包问题。其中嵌套了三层fun函数，搞清楚每层fun的函数是那个fun函数尤为重要。</strong></p>
 <blockquote>
-<p>好的，现在hexo也就绪了,hexo命令：</p>
+<p>//答案：</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">cd ~/git</div><div class="line">hexo init hexo  #执行init命令初始化到你指定的hexo目录</div><div class="line">cd hexo</div><div class="line">npm install    #install before start blogging</div><div class="line">hexo generate       #自动根据当前目录下文件,生成静态网页</div><div class="line">hexo server         #运行本地服务</div></pre></td></tr></table></figure>
-<blockquote>
-<p>浏览器输入<a href="http://localhost:4000%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%95%88%E6%9E%9C%E3%80%82/" target="_blank" rel="external">http://localhost:4000就可以看到效果。</a><br><strong>浏览目录</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt; ├── .deploy       #需要部署的文件</div><div class="line">&gt; ├── node_modules  #Hexo插件</div><div class="line">&gt; ├── public        #生成的静态网页文件</div><div class="line">&gt; ├── scaffolds     #模板</div><div class="line">&gt; ├── source        #博客正文和其他源文件, 404 favicon CNAME 等都应该放在这里</div><div class="line">&gt; |   ├── _drafts   #草稿</div><div class="line">&gt; |   └── _posts    #文章</div><div class="line">&gt; ├── themes        #主题</div><div class="line">&gt; ├── _config.yml   #全局配置文件</div><div class="line">&gt; └── package.json</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>添加博文</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; hexo new &quot;postName&quot;  #新建博文,其中postName是博文题目</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>如果不想博文在首页全部显示, 并能出现阅读全文按钮效果, 需要在你想在首页显示的部分下添加</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!--more--&gt;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>但是毕竟我们目前发布的只有本机看得到，怎么让其他人看到我们写的博客呢？这时候我们来看看博客的部署。</p>
-<p>我们只要在终端执行这样的命令即可：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; $ hexo deploy</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>这时候我们的博客已经部署到网上了，我们可以在浏览器地址输入栏输入我们的网址即可，如我的博客是：<a href="https://ideal-republic.github.io/" target="_blank" rel="external">ideal-republic.github.io</a>。</p>
-</blockquote>
-<h2 id="Hexo-Yilia主题配置"><a href="#Hexo-Yilia主题配置" class="headerlink" title="Hexo Yilia主题配置"></a>Hexo Yilia主题配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd ~/git/hexo</div><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git themes/yilia</div></pre></td></tr></table></figure>
-<blockquote>
-<p>在./_config.yml，修改主题为yilia<br>theme: yilia</p>
-<p>Hexo <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">主题</a></p>
-</blockquote>
-<p>查看本地效果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure>
-<h3 id="完整配置信息如下："><a href="#完整配置信息如下：" class="headerlink" title="完整配置信息如下："></a>完整配置信息如下：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div></pre></td><td class="code"><pre><div class="line"># Site #站点信息</div><div class="line">title: blog Name #标题</div><div class="line">subtitle: Subtitle #副标题</div><div class="line">description: my blog desc #描述</div><div class="line">author: me #作者</div><div class="line">language: zh-CN #语言</div><div class="line">timezone: Asia/Shanghai #时区</div><div class="line"></div><div class="line"># URL</div><div class="line">url: http://yoururl.com   #用于绑定域名, 其他的不需要配置</div><div class="line">root: /</div><div class="line">#permalink: :year/:month/:day/:title/</div><div class="line">permalink: posts/title.html</div><div class="line">permalink_defaults:</div><div class="line"></div><div class="line"># Directory #目录</div><div class="line">source_dir: source #源文件</div><div class="line">public_dir: public #生成的网页文件</div><div class="line">tag_dir: tags #标签</div><div class="line">archive_dir: archives #归档</div><div class="line">category_dir: categories #分类</div><div class="line">code_dir: downloads/code</div><div class="line">i18n_dir: :lang #国际化</div><div class="line">skip_render:</div><div class="line"></div><div class="line"># Writing #写作</div><div class="line">new_post_name: :title.md #新文章标题</div><div class="line">default_layout: post #默认模板(post page photo draft)</div><div class="line">titlecase: false #标题转换成大写</div><div class="line">external_link: true #新标签页里打开连接</div><div class="line">filename_case: 0</div><div class="line">render_drafts: false</div><div class="line">post_asset_folder: false</div><div class="line">relative_link: false</div><div class="line">future: true</div><div class="line">highlight: #语法高亮</div><div class="line">  enable: true</div><div class="line">  line_number: true #显示行号</div><div class="line">  auto_detect: true</div><div class="line">  tab_replace:</div><div class="line"></div><div class="line"># Category &amp; Tag #分类和标签</div><div class="line">default_category: uncategorized #默认分类</div><div class="line">category_map:</div><div class="line">tag_map:</div><div class="line"></div><div class="line"># Date / Time format #日期时间格式</div><div class="line">## http://momentjs.com/docs/#/displaying/format/</div><div class="line">date_format: YYYY-MM-DD</div><div class="line">time_format: HH:mm:ss</div><div class="line"></div><div class="line"># Pagination #分页</div><div class="line">per_page: 10 #每页文章数, 设置成 0 禁用分页</div><div class="line">pagination_dir: page</div><div class="line"></div><div class="line"># Extensions #插件和主题</div><div class="line">## 插件: http://hexo.io/plugins/</div><div class="line">## 主题: http://hexo.io/themes/</div><div class="line">theme: next</div><div class="line"></div><div class="line"># Deployment #部署, 同时发布在 GitHub 和 GitCafe 上面</div><div class="line">deploy:</div><div class="line">- type: git</div><div class="line">  repo: git@gitcafe.com:username/username.git,gitcafe-pages</div><div class="line">- type: git</div><div class="line">  repo: git@github.com:username/username.github.io.git,master</div><div class="line"></div><div class="line"># Disqus #Disqus评论系统</div><div class="line">disqus_shortname:</div><div class="line"></div><div class="line">plugins: #插件，例如生成 RSS 和站点地图的</div><div class="line">- hexo-generator-feed</div><div class="line">- hexo-generator-sitemap</div></pre></td></tr></table></figure>
-<blockquote>
-<p>其它设置，可参考：<a href="http://write.blog.csdn.net/mdeditor" target="_blank" rel="external">这篇博文</a></p>
-</blockquote>
-<h3 id="Hexo-Yilia-Bug修改"><a href="#Hexo-Yilia-Bug修改" class="headerlink" title="Hexo Yilia Bug修改"></a>Hexo Yilia Bug修改</h3><blockquote>
-<p>修改参考<a href="https://github.com/litten/hexo-theme-yilia/issues" target="_blank" rel="external">这里</a>基本所有的问题都能在这里解决了,所以啊，一个项目的issue真的很具有参考价值，少走不少弯路，通过这里的代码博主添加了 Hexo文章统计 功能，没有动画，头像设置有null的问题以及点击小房子没反应的bug。</p>
-</blockquote>
-<p>></p>
-<h2 id="Hexo添加文章目录"><a href="#Hexo添加文章目录" class="headerlink" title="Hexo添加文章目录"></a>Hexo添加文章目录</h2><blockquote>
-<p>我们首先要编辑文章显示页面的模板，也就是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; themes/landscape/layout/_partial/article.ejs</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>文件。为了将目录生成在正文之前，我们首先在这个文件中找到</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; &lt;%- post.content %&gt;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>并在这一行之前加入如下代码：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;!-- Table of Contents --&gt;</div><div class="line">&lt;% if (!index &amp;&amp; post.toc)&#123; %&gt;</div><div class="line">&lt;div id=&quot;toc&quot; class=&quot;toc-article&quot;&gt;</div><div class="line">&lt;strong class=&quot;toc-title&quot;&gt;文章目录&lt;/strong&gt;</div><div class="line">&lt;%- toc(post.content) %&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>这段代码的含义清晰明了，if语句中有两个条件，!index是为了不在首页的文章摘要中生成目录，post.toc确保了只在显式地标记了toc: true的文章中生成目录。若这两个条件满足，则创建一个目录的div。</p>
-<p>修改完这个文件之后，找一篇包含了多个子标题的文章，并在文章开头的front-matter中添加一句toc: true，在浏览器中访问这篇文章，应该可以看到文章的开头处已经有了带链接的目录。但是这样的目录实在太难看，我们还需要添加相应的CSS来将其指定为我们想要的样式。</p>
-<p>要指定目录的样式，我们要修改的文件是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; themes/landscape/source/css/_partial/article.styl</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>在文件的最后，添加如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&gt; /*toc*/</div><div class="line">&gt; .toc-article</div><div class="line">&gt; 	background #eee</div><div class="line">&gt; 	border 1px solid #bbb</div><div class="line">&gt; 	border-radius 10px</div><div class="line">&gt; 	margin 1.5em 0 0.3em 1.5em</div><div class="line">&gt; 	padding 1.2em 1em 0 1em</div><div class="line">&gt; 	max-width 28%</div><div class="line">&gt;</div><div class="line">&gt; .toc-title</div><div class="line">&gt; 	font-size 120%</div><div class="line">&gt;</div><div class="line">&gt; #toc</div><div class="line">&gt; 	line-height 1em</div><div class="line">&gt; 	font-size 0.9em</div><div class="line">&gt; 	float right</div><div class="line">&gt; .toc</div><div class="line">&gt; 	padding 0</div><div class="line">&gt; 	margin 1em</div><div class="line">&gt; 	line-height 1.8em</div><div class="line">&gt; 	li</div><div class="line">&gt; 	list-style-type none</div><div class="line">&gt;</div><div class="line">&gt; .toc-child</div><div class="line">&gt; 	margin-left 1em</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>由于Hexo使用的是stylus预处理器，所以CSS代码要注意缩进，不然就报错了，这种目录要是不满意完全可以按照自己意愿写一个。</p>
-</blockquote>
+<p>//a: undefined,0,0,0</p>
+<p>//b: undefined,0,1,2</p>
+<p>//c: undefined,0,1,1</p>
+<p><strong>都答对了么？如果都答对了恭喜你在js闭包问题当中几乎没什么可以难住你了。</strong></p>
 
       
 
@@ -368,7 +308,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/10/10/从零搭建基于github和hexo的个人博客/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/11/01/关于闭包/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -382,15 +322,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/11/01/关于闭包/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/11/11/Flex布局/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          关于闭包的一些总结
+          关于Flex布局的一些总结
         
       </div>
     </a>
   
+  
+    <a href="/2016/10/10/从零搭建基于github和hexo的个人博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
